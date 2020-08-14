@@ -3,27 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		294D376124E69B66008D5DC8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294D376024E69B66008D5DC8 /* MainViewController.swift */; };
+		294D376324E69BC2008D5DC8 /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294D376224E69BC2008D5DC8 /* DeviceData.swift */; };
 		297CE24124E563160071CA21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297CE24024E563160071CA21 /* AppDelegate.swift */; };
 		297CE24324E563160071CA21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297CE24224E563160071CA21 /* SceneDelegate.swift */; };
-		297CE24524E563160071CA21 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297CE24424E563160071CA21 /* MainViewController.swift */; };
+		297CE24524E563160071CA21 /* SearchDeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297CE24424E563160071CA21 /* SearchDeviceViewController.swift */; };
 		297CE24824E563160071CA21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 297CE24624E563160071CA21 /* Main.storyboard */; };
 		297CE24A24E563180071CA21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 297CE24924E563180071CA21 /* Assets.xcassets */; };
 		297CE24D24E563180071CA21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 297CE24B24E563180071CA21 /* LaunchScreen.storyboard */; };
+		297CE28E24E5C2F20071CA21 /* OSCKit in Frameworks */ = {isa = PBXBuildFile; productRef = 297CE28D24E5C2F20071CA21 /* OSCKit */; };
+		297CE29124E690110071CA21 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297CE29024E690110071CA21 /* Device.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		294D376024E69B66008D5DC8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		294D376224E69BC2008D5DC8 /* DeviceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceData.swift; sourceTree = "<group>"; };
 		297CE23D24E563160071CA21 /* LightBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		297CE24024E563160071CA21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		297CE24224E563160071CA21 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		297CE24424E563160071CA21 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		297CE24424E563160071CA21 /* SearchDeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDeviceViewController.swift; sourceTree = "<group>"; };
 		297CE24724E563160071CA21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		297CE24924E563180071CA21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		297CE24C24E563180071CA21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		297CE24E24E563180071CA21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		297CE29024E690110071CA21 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				297CE28E24E5C2F20071CA21 /* OSCKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +64,26 @@
 		297CE23F24E563160071CA21 /* LightBox */ = {
 			isa = PBXGroup;
 			children = (
+				297CE28F24E68FF40071CA21 /* DataModel */,
 				297CE24024E563160071CA21 /* AppDelegate.swift */,
 				297CE24224E563160071CA21 /* SceneDelegate.swift */,
-				297CE24424E563160071CA21 /* MainViewController.swift */,
+				297CE24424E563160071CA21 /* SearchDeviceViewController.swift */,
 				297CE24624E563160071CA21 /* Main.storyboard */,
 				297CE24924E563180071CA21 /* Assets.xcassets */,
 				297CE24B24E563180071CA21 /* LaunchScreen.storyboard */,
 				297CE24E24E563180071CA21 /* Info.plist */,
+				294D376024E69B66008D5DC8 /* MainViewController.swift */,
 			);
 			path = LightBox;
+			sourceTree = "<group>";
+		};
+		297CE28F24E68FF40071CA21 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				297CE29024E690110071CA21 /* Device.swift */,
+				294D376224E69BC2008D5DC8 /* DeviceData.swift */,
+			);
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +102,9 @@
 			dependencies = (
 			);
 			name = LightBox;
+			packageProductDependencies = (
+				297CE28D24E5C2F20071CA21 /* OSCKit */,
+			);
 			productName = LightBox;
 			productReference = 297CE23D24E563160071CA21 /* LightBox.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +133,9 @@
 				Base,
 			);
 			mainGroup = 297CE23424E563160071CA21;
+			packageReferences = (
+				297CE28C24E5C2F20071CA21 /* XCRemoteSwiftPackageReference "OSCKit" */,
+			);
 			productRefGroup = 297CE23E24E563160071CA21 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +163,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				297CE24524E563160071CA21 /* MainViewController.swift in Sources */,
+				297CE24524E563160071CA21 /* SearchDeviceViewController.swift in Sources */,
 				297CE24124E563160071CA21 /* AppDelegate.swift in Sources */,
 				297CE24324E563160071CA21 /* SceneDelegate.swift in Sources */,
+				297CE29124E690110071CA21 /* Device.swift in Sources */,
+				294D376124E69B66008D5DC8 /* MainViewController.swift in Sources */,
+				294D376324E69BC2008D5DC8 /* DeviceData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +368,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		297CE28C24E5C2F20071CA21 /* XCRemoteSwiftPackageReference "OSCKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sammysmallman/OSCKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		297CE28D24E5C2F20071CA21 /* OSCKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 297CE28C24E5C2F20071CA21 /* XCRemoteSwiftPackageReference "OSCKit" */;
+			productName = OSCKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 297CE23524E563160071CA21 /* Project object */;
 }
